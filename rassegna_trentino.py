@@ -4,16 +4,13 @@ Autore: Simone Magnolini (FBK)
 Descrizione:
   - Raccoglie notizie da feed RSS di testate locali
   - Filtra per parole chiave
-  - Genera un riassunto giornaliero in formato Markdown (e PDF opzionale)
+  - Genera un riassunto giornaliero in formato Markdown
 """
 
 import feedparser
 from datetime import datetime
 from pathlib import Path
 from textwrap import shorten
-from fpdf import FPDF
-import textwrap
-import re
 
 
 # =============================
